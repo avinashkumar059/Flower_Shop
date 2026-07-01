@@ -766,12 +766,12 @@ p { font-size: 1rem; color: var(--text-muted); }
 footer {
   background: var(--footer-bg);
   color: var(--footer-text);
-  padding: 64px 0 0;
+  padding: 50px 20px 0;
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 40px; margin-bottom: 48px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px; margin-bottom: 48px;
 }
 .footer-brand .nav-logo-text { color: #fff; margin-bottom: 12px; font-size: 1.4rem; }
 .footer-brand p { color: rgba(244,167,185,0.7); font-size: 0.9rem; max-width: 260px; margin-bottom: 20px; }
