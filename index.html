@@ -10,8 +10,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <script src="script.js"></script>
 </head>
+
 <body>
 
 <!-- ========== NAVBAR ========== -->
@@ -32,7 +34,7 @@
     <div class="nav-actions">
       <button class="nav-search-btn" onclick="toggleSearch()" title="Search">🔍</button>
       <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn" title="Toggle Theme">🌙</button>
-      <button class="hamburger" onclick="toggleMenu()" id="hamburger" aria-label="Menu">
+      <button class="hamburger" onclick="toggleMenu(event)" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -68,6 +70,7 @@
     <div class="hero-petal"></div>
     <div class="hero-petal"></div>
   </div>
+  
   <div class="hero-inner">
     <div class="hero-content">
       <div class="hero-badge">
@@ -82,7 +85,7 @@
       <p class="hero-tagline">"Delivering Happiness in Every Bouquet"</p>
       <div class="hero-ctas">
         <a href="#shop" class="btn btn-primary">🛍️ Shop Now</a>
-        <a href="https://wa.me/message/35QEKO7T64MQO1" target="_blank" class="btn btn-outline" style="border-color:var(--rose);color:var(--rose);">💬 Order Today</a>
+        <a href="https://wa.me/9779804877448" target="_blank" class="btn btn-outline" style="border-color:var(--rose);color:var(--rose);">💬 Order Today</a>
       </div>
       <div class="hero-stats">
         <div class="hero-stat"><strong>2K+</strong><span>Happy Customers</span></div>
@@ -91,12 +94,12 @@
       </div>
     </div>
     <div class="hero-visual">
-      <img class="hero-img-main" src="gallery/F2.png" alt="Beautiful flower bouquet" loading="eager">
+      <img class="hero-img-main" src="/gallery/F2.png" alt="Beautiful flower bouquet" loading="eager">
       <div class="hero-img-float f1">
-        <img src="/Flower_shop/gallery/A6.jpg" alt="Pink rose">
+        <img src="/gallery/M5.jpg" alt="Pink rose">
       </div>
       <div class="hero-img-float f2">
-        <img src="/Flower_shop/gallery/M1.jpg" alt="Gift box">
+        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=200&q=80" alt="Gift box">
       </div>
     </div>
   </div>
@@ -108,8 +111,8 @@
     <div class="about-grid">
       <div class="about-images reveal-left">
         <div class="about-badge-img"><strong>10+</strong><span>Years of Love</span></div>
-        <img class="about-img-main" src="/Flower_shop/gallery/F1.jpeg" alt="About Bloom & Gift House">
-        <img class="about-img-secondary" src="https://images.unsplash.com/photo-1533616688419-b7a585564566?w=400&q=80" alt="Flower arrangement">
+        <img class="about-img-main" src="/gallery/F2.webp" alt="About Bloom & Gift House">
+        <img class="about-img-secondary" src="/gallery/M3.jpg" alt="Flower arrangement">
       </div>
       <div class="about-content reveal-right">
         <span class="section-tag">Our Story</span>
@@ -123,7 +126,7 @@
           <div class="about-feature"><span class="ico">✨</span> <span>Premium decoration services available</span></div>
           <div class="about-feature"><span class="ico">💚</span> <span>100% satisfaction guaranteed</span></div>
         </div>
-        <a href="https://wa.me/9779800000000" target="_blank" class="btn btn-primary">Chat With Us 💬</a>
+        <a href="https://wa.me/9779804877448" target="_blank" class="btn btn-primary">Chat With Us 💬</a>
       </div>
     </div>
   </div>
@@ -142,7 +145,6 @@
       <button class="shop-tab active" onclick="filterProducts('all', this)">🌟 All</button>
       <button class="shop-tab" onclick="filterProducts('flowers', this)">🌹 Flowers</button>
       <button class="shop-tab" onclick="filterProducts('bouquets', this)">💐 Bouquets</button>
-      <button class="shop-tab" onclick="filterProducts('cakes', this)">🎂 Cakes</button>
       <button class="shop-tab" onclick="filterProducts('combos', this)">🎁 Gift Combos</button>
     </div>
     <div class="products-grid" id="productsGrid">
@@ -165,37 +167,37 @@
         <div class="service-icon">💐</div>
         <h4>Custom Bouquet Design</h4>
         <p>Tell us your vision and our expert florists will craft a bespoke bouquet that speaks directly to the heart of your loved one.</p>
-        <a href="https://wa.me/9779800000000" target="_blank" class="btn-buy">Book Now 💬</a>
+        <a href="https://wa.me/9779804877448" target="_blank" class="btn-buy">Book Now 💬</a>
       </div>
       <div class="service-card reveal">
         <div class="service-icon">🎂</div>
         <h4>Cake &amp; Flower Packages</h4>
         <p>Celebrate in style with our curated cake and flower pairings — perfect for birthdays, anniversaries, and every milestone moment.</p>
-        <a href="https://wa.me/9779800000000" target="_blank" class="btn-buy">Book Now 💬</a>
+        <a href="https://wa.me/9779804877448" target="_blank" class="btn-buy">Book Now 💬</a>
       </div>
       <div class="service-card reveal">
         <div class="service-icon">🎁</div>
         <h4>Corporate Gifting</h4>
         <p>Impress clients, reward teams, and strengthen relationships with our premium corporate gift solutions, fully branded and bespoke.</p>
-        <a href="https://wa.me/9779800000000" target="_blank" class="btn-buy">Book Now 💬</a>
+        <a href="https://wa.me/9779804877448" target="_blank" class="btn-buy">Book Now 💬</a>
       </div>
       <div class="service-card reveal">
         <div class="service-icon">🚚</div>
         <h4>Same-Day Delivery</h4>
         <p>Never miss an important moment. Order before noon and we guarantee fresh, beautiful delivery to your doorstep the very same day.</p>
-        <a href="https://wa.me/9779800000000" target="_blank" class="btn-buy">Order Now 💬</a>
+        <a href="https://wa.me/9779804877448" target="_blank" class="btn-buy">Order Now 💬</a>
       </div>
       <div class="service-card reveal">
         <div class="service-icon">💍</div>
         <h4>Wedding Floral Styling</h4>
         <p>From bridal bouquets to full ceremony florals, we create breathtaking floral experiences that make your wedding day magical.</p>
-        <a href="https://wa.me/9779800000000" target="_blank" class="btn-buy">Enquire 💬</a>
+        <a href="https://wa.me/9779804877448" target="_blank" class="btn-buy">Enquire 💬</a>
       </div>
       <div class="service-card reveal">
         <div class="service-icon">🌿</div>
         <h4>Floral Subscription</h4>
         <p>Keep your home or office alive with fresh blooms every week. Subscribe to our weekly or monthly floral arrangement service.</p>
-        <a href="https://wa.me/9779800000000" target="_blank" class="btn-buy">Subscribe 💬</a>
+        <a href="https://wa.me/9779804877448" target="_blank" class="btn-buy">Subscribe 💬</a>
       </div>
     </div>
   </div>
@@ -222,7 +224,7 @@
           <div class="decor-icon">🎂</div>
           <h4>Birthday Decorations</h4>
           <p>Make every birthday unforgettable with our vibrant, creative, and personalized birthday setups — balloons, floral arches, and so much more.</p>
-          <a href="https://wa.me/9779800000000" target="_blank" class="btn-buy">Book Now 💬</a>
+          <a href="https://wa.me/9779804877448" target="_blank" class="btn-buy">Book Now 💬</a>
         </div>
       </div>
       <div class="decor-card reveal">
@@ -234,7 +236,7 @@
           <div class="decor-icon">💍</div>
           <h4>Wedding Decorations</h4>
           <p>Create the wedding of your dreams with our luxurious floral backdrops, mandap decor, table centerpieces, and enchanting ceremony setups.</p>
-          <a href="https://wa.me/9779800000000" target="_blank" class="btn-buy">Book Now 💬</a>
+          <a href="https://wa.me/9779804877448" target="_blank" class="btn-buy">Book Now 💬</a>
         </div>
       </div>
       <div class="decor-card reveal">
@@ -246,7 +248,7 @@
           <div class="decor-icon">❤️</div>
           <h4>Anniversary Decorations</h4>
           <p>Celebrate your love story with romantic candle setups, rose petal arrangements, and personalized décor that speaks volumes of your journey together.</p>
-          <a href="https://wa.me/9779800000000" target="_blank" class="btn-buy">Book Now 💬</a>
+          <a href="https://wa.me/9779804877448" target="_blank" class="btn-buy">Book Now 💬</a>
         </div>
       </div>
       <div class="decor-card reveal">
@@ -258,7 +260,7 @@
           <div class="decor-icon">👶</div>
           <h4>Baby Shower &amp; Surprise</h4>
           <p>Welcome the newest member of your family with our whimsical, pastel-themed baby shower decorations and surprise party setups that delight and amaze.</p>
-          <a href="https://wa.me/9779800000000" target="_blank" class="btn-buy">Book Now 💬</a>
+          <a href="https://wa.me/9779804877448" target="_blank" class="btn-buy">Book Now 💬</a>
         </div>
       </div>
       <div class="decor-card reveal">
@@ -270,7 +272,7 @@
           <div class="decor-icon">🏢</div>
           <h4>Corporate Event Decorations</h4>
           <p>Elevate your brand's events with sophisticated, professional décor — from product launches and office parties to award ceremonies and conferences.</p>
-          <a href="https://wa.me/9779800000000" target="_blank" class="btn-buy">Book Now 💬</a>
+          <a href="https://wa.me/9779804877448" target="_blank" class="btn-buy">Book Now 💬</a>
         </div>
       </div>
       <div class="decor-card reveal">
@@ -282,7 +284,7 @@
           <div class="decor-icon">🎊</div>
           <h4>Special Occasion Decor</h4>
           <p>Graduation, farewell, retirement, or any milestone — we design bespoke decorations that honour your special moments with elegance and warmth.</p>
-          <a href="https://wa.me/9779800000000" target="_blank" class="btn-buy">Book Now 💬</a>
+          <a href="https://wa.me/9779804877448" target="_blank" class="btn-buy">Book Now 💬</a>
         </div>
       </div>
     </div>
@@ -391,14 +393,14 @@
             <div class="icon">📍</div>
             <div class="contact-item-text">
               <strong>Our Address</strong>
-              <span>Thamel, Kathmandu, Nepal</span>
+              <span>Mahavir chowak, Jankapur, Nepal</span>
             </div>
           </div>
           <div class="contact-item">
             <div class="icon">📞</div>
             <div class="contact-item-text">
               <strong>Phone / WhatsApp</strong>
-              <span>+977 9800000000</span>
+              <span>+977 9804877448</span>
             </div>
           </div>
           <div class="contact-item">
@@ -412,7 +414,7 @@
             <div class="icon">🕐</div>
             <div class="contact-item-text">
               <strong>Working Hours</strong>
-              <span>Sun–Fri: 9am–7pm | Sat: 10am–5pm</span>
+              <span>Sun–Sat: 8am–9pm | Online anytime contact with us</span>
             </div>
           </div>
         </div>
@@ -429,19 +431,6 @@
   </div>
 </section>
 
-<!-- ========== NEWSLETTER ==========
-<section id="newsletter">
-  <div class="container">
-    <span class="section-tag" style="background:rgba(255,255,255,0.2);color:#fff;">Stay Connected</span>
-    <h2>Subscribe to Our Newsletter</h2>
-    <p>Get exclusive offers, seasonal collections, and floral inspiration delivered to your inbox.</p>
-    <form class="newsletter-form" onsubmit="handleNewsletter(event)">
-      <input type="email" placeholder="Enter your email address…" required>
-      <button type="submit">Subscribe 🌸</button>
-    </form>
-  </div>
-</section> -->
-
 <!-- ========== FOOTER ========== -->
 <footer>
   <div class="container">
@@ -453,21 +442,38 @@
         </div>
         <p>Delivering happiness through the art of flowers and thoughtful gifting. Every bloom tells a story — let us help you tell yours.</p>
         <div class="social-links">
-          <a href="#" class="social-link" title="Facebook">📘</a>
-          <a href="#" class="social-link" title="Instagram">📸</a>
-          <a href="#" class="social-link" title="TikTok">🎵</a>
-          <a href="https://wa.me/9779800000000" target="_blank" class="social-link" title="WhatsApp">💬</a>
+          <a href="https://facebook.com" class="social-link" title="Facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/feelflower1176?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link" title="Instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@mithilaflowers1176?is_from_webapp=1&sender_device=pc" class="social-link" title="TikTok" target="_blank">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://wa.me/9779804877448" class="social-link" title="WhatsApp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
         </div>
       </div>
+
+        <div class="footer-col">
+        <h5>Contact Info</h5>
+        <ul>
+          <li><a href="#">📍 Mahavir chowak, Jankapur</a></li>
+          <li><a href="tel:+9779804877448">📞 +977 9804877448</a></li>
+          <li><a href="mailto:hello@bloomgifthouse.com">📧 hello@bloomgifthouse.com</a></li>
+          <li><a href="#">🕐 Sun–Sat: 8am–9pm</a></li>
+        </ul>
+      </div>
+
       <div class="footer-col">
         <h5>Quick Links</h5>
         <ul>
           <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About Us</a></li>
           <li><a href="#shop">Shop</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#decorations">Decorations</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -479,15 +485,7 @@
           <li><a href="#shop">Seasonal Specials</a></li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h5>Contact Info</h5>
-        <ul>
-          <li><a href="#">📍 Mahavir chowak, Jankapur</a></li>
-          <li><a href="tel:+9779804877448">📞 +977 9804877448</a></li>
-          <li><a href="mailto:hello@bloomgifthouse.com">📧 hello@bloomgifthouse.com</a></li>
-          <li><a href="#">🕐 Sun–Fri: 9am–7pm</a></li>
-        </ul>
-      </div>
+      
     </div>
     <div class="footer-bottom">
       <p>© 2025 Mithila Flower &amp; Gift House. All rights reserved. Made with 🌸 in Nepal.</p>
@@ -498,7 +496,7 @@
   
 </footer>
 <!-- ========== WHATSAPP FLOAT ========== -->
-<a href="https://wa.me/message/35QEKO7T64MQO1" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+<a href="https://wa.me/9779804877448" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
   <span class="whatsapp-tooltip">Chat with us!</span>
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
@@ -507,6 +505,7 @@
 
 <!-- ========== SCROLL TO TOP ========== -->
 <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+
 
 </body>
 </html>
